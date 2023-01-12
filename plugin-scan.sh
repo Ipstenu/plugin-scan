@@ -1348,8 +1348,6 @@ if [ "$stopevil" = false ] && [ "$param" = default ]; then
 
 		## Clean up results! (NB: this is on a mac so -i needs a blank '' in front, thanks FreeBSD)
 		sed -i '' 's/current_plugin\///g' "$phpcsfile"
-		sed -i '' 's/\/Users\/ipstenu\/Downloads\///g' "$phpcsfile"
-		sed -i '' 's/\/ipstenu\///g' "$phpcsfile"
 		sed -i '' 's/?>//g' "$phpcsfile"
 		sed -i '' 's/---------------------------------------------------------------------/\n/g' "$phpcsfile"
 
